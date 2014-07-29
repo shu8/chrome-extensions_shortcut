@@ -1,0 +1,16 @@
+{
+  "name": "chrome://extensions shortcut",
+  "description": "Press Ctrl+Shift+E (Cmd+Shift+E on OSX) to open the chrome://extensions page.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": { "default": "Ctrl+Shift+E" },
+      "description": "Open the chrome://extensions page"
+    }
+  }
+}
